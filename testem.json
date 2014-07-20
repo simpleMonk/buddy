@@ -1,0 +1,17 @@
+{
+    "framework": "mocha",
+    "src_files": [
+        "node_modules/chai/chai.js",
+        "development/spec/spec.js",
+        "spec/config/setup.js"
+    ],
+    "launchers": {
+        "node": {
+            "command": "./node_modules/.bin/mocha -r spec/config/setup.js -R tap development/spec/*.js",
+            "protocol": "tap"
+        }
+    },
+    "launch_in_dev": [
+        "chrome"
+    ]
+}
