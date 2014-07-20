@@ -50,7 +50,7 @@ gulp.task('prepare-dev-js', function () {
 gulp.task('prepare-dev-templates', ['copy-index-file', 'copy-templates']);
 
 gulp.task('build', function () {
-    runSequence('clean-dist', ['build-js', 'build-css', 'build-templates'], 'run-dist-server');
+    runSequence('clean-dist', 'build-js', 'build-css', 'build-templates');
 });
 
 
