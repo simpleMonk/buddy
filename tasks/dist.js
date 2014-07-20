@@ -30,7 +30,7 @@ var srcJsFiles = config.path.src.js,
     distIndexFilePath = config.path.dist.self,
     distSpecPath = config.path.dist.spec;
 
-gulp.task('build-js', ['build-vendor-js', 'build-src-js', 'run-specs-dist']);
+gulp.task('build-js', [ 'build-src-js', 'build-vendor-js', 'run-specs-dist']);
 
 gulp.task('build-vendor-js', function () {
     gulp.src(vendorJsFiles)

@@ -13,7 +13,7 @@ var config = {
         },
         vendor: {
             self: "vendor",
-            js: [ "vendor/js/**/*.js"],
+            js: "vendor/js/**/*.js",
             css: "vendor/css",
             images: "vendor/images",
             fonts: "vendor/fonts"
