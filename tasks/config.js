@@ -13,11 +13,7 @@ var config = {
         },
         vendor: {
             self: "vendor",
-            js: [
-                "vendor/js/bower-angular-bundle/jquery-2.1.1.min.js",
-                "vendor/js/bower-angular-bundle/angular.min.js",
-                "vendor/js/**/*.js"
-            ],
+            js: [ "vendor/js/**/*.js"],
             css: "vendor/css",
             images: "vendor/images",
             fonts: "vendor/fonts"
